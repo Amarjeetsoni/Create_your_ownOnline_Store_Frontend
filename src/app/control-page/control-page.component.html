@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #2b2929;">
+    <!-- <a class="navbar-brand" href="#">Coding Yaar</a> -->
+    <div id="logo">
+        <a href="/home">
+        <img src="assets/Image/LogoOnlineShopFinal.png" width="280" height="50" style="margin-left: 5%;"/></a>
+    </div>   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler12"
+        aria-controls="myNavbarToggler12" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbarToggler12" style="margin-left: 15%;">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" [routerLink]="" (click)="HomeFunction()">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="" (click)="ServicesFunction()">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="" (click)="FAQFunction()">FAQ's</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="" (click)="RolesFunction()">Roles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="" (click)="StatisticsFunction()">Statistics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="" (click)="AboutusFunction()">AboutUs</a>
+            </li>
+            
+        </ul>
+        <button class="btn btn-secondary" type="button" style="margin-left: 25%;">Log In</button> &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-success" type="button">Sign Up</button>
+    </div>
+</nav>
+<div *ngIf="Home">
+   <h1>Home Works.</h1>
+</div>
+<div *ngIf="Services">
+    <h1>Services Works.</h1>
+ </div>
+ <div *ngIf="FAQ">
+    <h1>FAQ Works.</h1>
+ </div>
+ <div *ngIf="Roles">
+    <h1>Roles Works.</h1>
+ </div>
+ <div *ngIf="Statistics">
+    <h1>Statistics Works.</h1>
+ </div>
+ <div *ngIf="Aboutus">
+    <h1>Aboutus Works.</h1>
+ </div>
+
+ <!-- Footer -->
+<footer class="page-footer font-small" style="background-color: #eaf5f7;">
+
+    <!-- Copyright -->
+    
+    <div class="footer-copyright text-center py-3">
+        <a [routerLink]="" (click)="HomeFunction()">Home&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+        <a [routerLink]="" (click)="ServicesFunction()">Services&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+        <a [routerLink]="" (click)="FAQFunction()">FAQ's&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+        <a [routerLink]="" (click)="StatisticsFunction()">Statistics&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+        <a [routerLink]="" (click)="AboutusFunction()">AboutUs&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+        <a [routerLink]="" (click)="AboutusFunction()">Request A Feature&nbsp;&nbsp;</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
